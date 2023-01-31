@@ -17,6 +17,10 @@ namespace Deliverable3
                 {
                     Console.WriteLine("Please enter an integer between 1 and 100: ");
                     max = Convert.ToInt32(Console.ReadLine());
+                    while (max < 1 || max > 100)
+                    {
+                        Console.WriteLine("Number entered is outside specified range. Please enter an integer between 1 and 100: ");
+                        max = Convert.ToInt32(Console.ReadLine()); }
                     break;
                 }
                 catch (Exception ex)
